@@ -10,7 +10,7 @@ Interactive benchmarks for uniform and guided Grover Adaptive Search (GAS):
 - Collapsible results, biomarker frequencies, exact panels, QUBO construction and preparation guides.
 - Offline LaTeX rendering with embedded KaTeX and accessible MathML.
 
-The main report is in English. Its archive link opens the original Spanish round-2 report.
+The report is in English.
 
 ## Interpretation
 

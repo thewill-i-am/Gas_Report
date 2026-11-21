@@ -14,6 +14,21 @@
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "3-phosphoglycerate",
+        "X - 11522",
+        "iminodiacetate (IDA)"
+      ],
+      "mean_across_classifiers": 0.9347222222222222,
+      "balanced_accuracy": {
+        "LDA": 0.9222222222222223,
+        "linear_SVM": 0.9472222222222222
+      },
+      "seeds": [
+        2038
+      ]
+    },
     "biomarker_counts": {
       "3-phosphoglycerate": 9,
       "X - 24306": 2,
@@ -216,6 +231,21 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "1-(1-enyl-oleoyl)-GPE (P-18:1)*",
+        "iminodiacetate (IDA)",
+        "inosine 5'-monophosphate (IMP)"
+      ],
+      "mean_across_classifiers": 0.9222222222222223,
+      "balanced_accuracy": {
+        "LDA": 0.9222222222222223,
+        "linear_SVM": 0.9222222222222223
+      },
+      "seeds": [
+        2038
+      ]
+    },
     "biomarker_counts": {
       "iminodiacetate (IDA)": 14,
       "inosine 5'-monophosphate (IMP)": 19,
@@ -368,6 +398,23 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+        "3-phosphoglycerate",
+        "X - 21258",
+        "bilirubin",
+        "sarcosine"
+      ],
+      "mean_across_classifiers": 0.9472222222222222,
+      "balanced_accuracy": {
+        "LDA": 0.9194444444444444,
+        "linear_SVM": 0.975
+      },
+      "seeds": [
+        2030
+      ]
     },
     "biomarker_counts": {
       "3-phosphoglycerate": 20,
@@ -626,6 +673,25 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "3-phosphoglycerate",
+        "X - 11334",
+        "caproate (6:0)",
+        "creatine",
+        "inosine 5'-monophosphate (IMP)"
+      ],
+      "mean_across_classifiers": 0.95,
+      "balanced_accuracy": {
+        "LDA": 0.95,
+        "linear_SVM": 0.95
+      },
+      "seeds": [
+        2026,
+        2037,
+        2038
+      ]
+    },
     "biomarker_counts": {
       "3-phosphoglycerate": 20,
       "X - 11334": 13,
@@ -810,6 +876,25 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "1-stearoyl-GPS (18:0)*",
+        "3-phosphoglycerate",
+        "X - 12462",
+        "citrate",
+        "creatine",
+        "eicosapentaenoate (EPA; 20:5n3)",
+        "inosine 5'-monophosphate (IMP)"
+      ],
+      "mean_across_classifiers": 0.9611111111111111,
+      "balanced_accuracy": {
+        "LDA": 0.9222222222222223,
+        "linear_SVM": 1.0
+      },
+      "seeds": [
+        2035
+      ]
     },
     "biomarker_counts": {
       "3-phosphoglycerate": 15,
@@ -1115,6 +1200,25 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "3-phosphoglycerate",
+        "X - 11334",
+        "X - 21258",
+        "biliverdin",
+        "creatine",
+        "iminodiacetate (IDA)",
+        "inosine 5'-monophosphate (IMP)"
+      ],
+      "mean_across_classifiers": 0.9624999999999999,
+      "balanced_accuracy": {
+        "LDA": 0.95,
+        "linear_SVM": 0.975
+      },
+      "seeds": [
+        2031
+      ]
+    },
     "biomarker_counts": {
       "3-phosphoglycerate": 20,
       "X - 02269": 3,
@@ -1397,6 +1501,21 @@
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "Chlorotyrosine",
+        "Nitrotyrosine",
+        "tGSH/GSSG"
+      ],
+      "mean_across_classifiers": 0.9276712111604312,
+      "balanced_accuracy": {
+        "LDA": 0.9243817374762207,
+        "linear_SVM": 0.9309606848446417
+      },
+      "seeds": [
+        2033
+      ]
+    },
     "biomarker_counts": {
       "8-OHG": 14,
       "tGSH/GSSG": 8,
@@ -1556,6 +1675,40 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "% oxidized",
+        "8-OHG",
+        "tGSH/GSSG"
+      ],
+      "mean_across_classifiers": 0.9178027901077996,
+      "balanced_accuracy": {
+        "LDA": 0.9243817374762207,
+        "linear_SVM": 0.9112238427393786
+      },
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2037,
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045
+      ]
+    },
     "biomarker_counts": {
       "8-OHG": 20,
       "tGSH/GSSG": 20,
@@ -1586,6 +1739,23 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "8-OHG",
+        "Methion.",
+        "Nitrotyrosine",
+        "SAM/SAH",
+        "tGSH/GSSG"
+      ],
+      "mean_across_classifiers": 0.943008877615726,
+      "balanced_accuracy": {
+        "LDA": 0.9484781230183894,
+        "linear_SVM": 0.9375396322130627
+      },
+      "seeds": [
+        2041
+      ]
     },
     "biomarker_counts": {
       "Methion.": 11,
@@ -1823,6 +1993,23 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "% DNA methylation",
+        "% oxidized",
+        "8-OHG",
+        "Chlorotyrosine",
+        "tGSH/GSSG"
+      ],
+      "mean_across_classifiers": 0.9471306277742548,
+      "balanced_accuracy": {
+        "LDA": 0.9441185795814838,
+        "linear_SVM": 0.950142675967026
+      },
+      "seeds": [
+        2042
+      ]
+    },
     "biomarker_counts": {
       "% DNA methylation": 20,
       "8-OHG": 20,
@@ -1868,6 +2055,25 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "% DNA methylation",
+        "% oxidized",
+        "8-OHG",
+        "Chlorotyrosine",
+        "Cysteine",
+        "SAH",
+        "Tryptophane"
+      ],
+      "mean_across_classifiers": 0.9569990488268865,
+      "balanced_accuracy": {
+        "LDA": 0.950697526949905,
+        "linear_SVM": 0.9633005707038681
+      },
+      "seeds": [
+        2028
+      ]
     },
     "biomarker_counts": {
       "Methion.": 7,
@@ -2151,6 +2357,25 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "% oxidized",
+        "8-OHG",
+        "Chlorotyrosine",
+        "Cysteine",
+        "fCystine",
+        "tGSH",
+        "tGSH/GSSG"
+      ],
+      "mean_across_classifiers": 0.9556119213696892,
+      "balanced_accuracy": {
+        "LDA": 0.9556119213696892,
+        "linear_SVM": 0.9556119213696892
+      },
+      "seeds": [
+        2028
+      ]
+    },
     "biomarker_counts": {
       "% DNA methylation": 11,
       "8-OHG": 20,
@@ -2303,6 +2528,21 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "Actinomyces_viscosus",
+        "Raoultella_sp._NCTC_9189",
+        "Rhodovulum_sp._P5"
+      ],
+      "mean_across_classifiers": 0.825,
+      "balanced_accuracy": {
+        "LDA": 0.825,
+        "linear_SVM": 0.825
+      },
+      "seeds": [
+        2035
+      ]
     },
     "biomarker_counts": {
       "Jeotgalicoccus_saudimassiliensis": 1,
@@ -2508,6 +2748,21 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "Arthrobacter_sp._PGP41",
+        "Raoultella_sp._NCTC_9189",
+        "Shewanella_donghaensis"
+      ],
+      "mean_across_classifiers": 0.825,
+      "balanced_accuracy": {
+        "LDA": 0.825,
+        "linear_SVM": 0.825
+      },
+      "seeds": [
+        2039
+      ]
+    },
     "biomarker_counts": {
       "Burkholderia_sp._BDU6": 12,
       "Raoultella_sp._NCTC_9189": 20,
@@ -2574,6 +2829,23 @@
       "alpha": 0.77,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "Bacillus_foraminis",
+        "Burkholderia_sp._BDU6",
+        "Octadecabacter_antarcticus",
+        "Raoultella_sp._NCTC_9189",
+        "Streptomyces_sp._ADI95-16"
+      ],
+      "mean_across_classifiers": 0.8347222222222221,
+      "balanced_accuracy": {
+        "LDA": 0.8222222222222222,
+        "linear_SVM": 0.8472222222222222
+      },
+      "seeds": [
+        2037
+      ]
     },
     "biomarker_counts": {
       "Bacillus_foraminis": 2,
@@ -2835,6 +3107,24 @@
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
     },
+    "best_observed_panel": {
+      "names": [
+        "Arthrobacter_sp._PGP41",
+        "Burkholderia_sp._BDU6",
+        "Octadecabacter_antarcticus",
+        "Raoultella_sp._NCTC_9189",
+        "Shewanella_donghaensis"
+      ],
+      "mean_across_classifiers": 0.8374999999999999,
+      "balanced_accuracy": {
+        "LDA": 0.825,
+        "linear_SVM": 0.85
+      },
+      "seeds": [
+        2026,
+        2031
+      ]
+    },
     "biomarker_counts": {
       "Arthrobacter_sp._PGP41": 6,
       "Burkholderia_sp._BDU6": 20,
@@ -3056,6 +3346,25 @@
       "alpha": 1.0,
       "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "Advenella_mimigardefordensis",
+        "Burkholderia_sp._BDU6",
+        "Lactobacillus_vaginalis",
+        "Octadecabacter_antarcticus",
+        "Paenibacillus_yonginensis",
+        "Rhodovulum_sulfidophilum",
+        "Shewanella_donghaensis"
+      ],
+      "mean_across_classifiers": 0.8486111111111112,
+      "balanced_accuracy": {
+        "LDA": 0.7972222222222223,
+        "linear_SVM": 0.9
+      },
+      "seeds": [
+        2043
+      ]
     },
     "biomarker_counts": {
       "Bacillus_cellulosilyticus": 4,
@@ -3361,6 +3670,25 @@
       "alpha": 1.0,
       "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
       "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "best_observed_panel": {
+      "names": [
+        "Burkholderia_sp._BDU6",
+        "Cronobacter_condimenti",
+        "Lactobacillus_vaginalis",
+        "Pseudomonas_sp._URMO17WK12:I11",
+        "Raoultella_sp._NCTC_9189",
+        "Rhodovulum_sp._P5",
+        "Shewanella_donghaensis"
+      ],
+      "mean_across_classifiers": 0.825,
+      "balanced_accuracy": {
+        "LDA": 0.825,
+        "linear_SVM": 0.825
+      },
+      "seeds": [
+        2029
+      ]
     },
     "biomarker_counts": {
       "Arthrobacter_sp._PGP41": 9,
