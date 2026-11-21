@@ -1,0 +1,3641 @@
+[
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_objectives",
+    "variant": "pearson_mean",
+    "k": 3,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.8679166666666667,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Absolute Pearson correlation between each biomarker and the class label.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "3-phosphoglycerate": 9,
+      "X - 24306": 2,
+      "caproate (6:0)": 3,
+      "creatine": 1,
+      "iminodiacetate (IDA)": 7,
+      "inosine 5'-monophosphate (IMP)": 11,
+      "methylsuccinate": 5,
+      "citrate": 2,
+      "1-palmitoyl-GPI* (16:0)*": 2,
+      "2-methylserine": 1,
+      "prolylhydroxyproline": 1,
+      "2-hydroxystearate": 1,
+      "X - 24307": 3,
+      "X - 11530": 2,
+      "X - 11522": 1,
+      "1-stearoyl-GPS (18:0)*": 1,
+      "caprylate (8:0)": 1,
+      "1-stearoyl-GPI (18:0)": 1,
+      "sarcosine": 2,
+      "1-oleoyl-GPS (18:1)": 1,
+      "X - 11334": 2,
+      "1-methylimidazoleacetate": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "iminodiacetate (IDA)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-oleoyl-GPS (18:1)",
+          "X - 24306",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "3-phosphoglycerate",
+          "X - 24307"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPI (18:0)",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPS (18:0)*",
+          "caprylate (8:0)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "2-hydroxystearate",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "2-methylserine",
+          "3-phosphoglycerate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11522",
+          "iminodiacetate (IDA)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11530",
+          "caproate (6:0)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11530",
+          "iminodiacetate (IDA)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 24306",
+          "caproate (6:0)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "citrate",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 11334",
+          "X - 24307",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 11334",
+          "methylsuccinate",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 24307",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "caproate (6:0)",
+          "inosine 5'-monophosphate (IMP)",
+          "prolylhydroxyproline"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "citrate",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_objectives",
+    "variant": "pearson_mean",
+    "k": 3,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.8702083333333335,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Absolute Pearson correlation between each biomarker and the class label.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "iminodiacetate (IDA)": 14,
+      "inosine 5'-monophosphate (IMP)": 19,
+      "methylsuccinate": 6,
+      "3-phosphoglycerate": 3,
+      "X - 15469": 2,
+      "1-methylimidazoleacetate": 1,
+      "sarcosine": 7,
+      "1-palmitoyl-GPI* (16:0)*": 1,
+      "caproate (6:0)": 3,
+      "1-(1-enyl-oleoyl)-GPE (P-18:1)*": 1,
+      "caprylate (8:0)": 1,
+      "X - 24307": 1,
+      "1-stearoyl-GPI (18:0)": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 4
+      },
+      {
+        "names": [
+          "caproate (6:0)",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "1-(1-enyl-oleoyl)-GPE (P-18:1)*",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPI (18:0)",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "iminodiacetate (IDA)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 15469",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 15469",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 24307",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "caproate (6:0)",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "caprylate (8:0)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_round2",
+    "variant": "relief5",
+    "k": 5,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.8763888888888889,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Binary ReliefF: features scaled to [0,1], every sample used as an anchor, 5 nearest same-class neighbors and 5 opposite-class neighbors under L1 distance. Relevance is the mean opposite-class minus same-class feature distance, clipped below at zero.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "3-phosphoglycerate": 20,
+      "caproate (6:0)": 2,
+      "gamma-glutamylhistidine": 1,
+      "iminodiacetate (IDA)": 3,
+      "sphingomyelin (d18:1/14:0, d16:1/16:0)*": 2,
+      "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*": 3,
+      "1-methylimidazoleacetate": 1,
+      "X - 24307": 6,
+      "methylsuccinate": 2,
+      "1-palmitoyl-GPI* (16:0)*": 2,
+      "X - 21258": 2,
+      "creatine": 1,
+      "inosine 5'-monophosphate (IMP)": 10,
+      "picolinate": 1,
+      "tiglyl carnitine (C5)": 3,
+      "bilirubin": 4,
+      "sarcosine": 5,
+      "X - 12462": 1,
+      "sphingosine 1-phosphate": 4,
+      "10-undecenoate (11:1n1)": 1,
+      "caprylate (8:0)": 1,
+      "X - 02269": 3,
+      "cys-gly, oxidized": 2,
+      "2-methylserine": 1,
+      "eicosapentaenoate (EPA; 20:5n3)": 4,
+      "indolepropionate": 1,
+      "21-hydroxypregnenolone disulfate": 2,
+      "X - 14056": 1,
+      "X - 23639": 1,
+      "1-stearoyl-GPS (18:0)*": 2,
+      "biliverdin": 1,
+      "9,10-DiHOME": 1,
+      "maleate": 1,
+      "12,13-DiHOME": 1,
+      "1-arachidonoyl-GPI* (20:4)*": 2,
+      "isoleucylglycine": 1,
+      "X - 11522": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "1-arachidonoyl-GPI* (20:4)*",
+          "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+          "3-phosphoglycerate",
+          "caproate (6:0)",
+          "isoleucylglycine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-arachidonoyl-GPI* (20:4)*",
+          "3-phosphoglycerate",
+          "bilirubin",
+          "inosine 5'-monophosphate (IMP)",
+          "tiglyl carnitine (C5)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 24307",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+          "3-phosphoglycerate",
+          "X - 21258",
+          "bilirubin",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "3-phosphoglycerate",
+          "X - 11522",
+          "inosine 5'-monophosphate (IMP)",
+          "sphingosine 1-phosphate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "3-phosphoglycerate",
+          "X - 21258",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPS (18:0)*",
+          "3-phosphoglycerate",
+          "9,10-DiHOME",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPS (18:0)*",
+          "3-phosphoglycerate",
+          "X - 02269",
+          "biliverdin",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "caprylate (8:0)",
+          "sarcosine",
+          "sphingosine 1-phosphate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "12,13-DiHOME",
+          "3-phosphoglycerate",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "iminodiacetate (IDA)",
+          "sphingomyelin (d18:1/14:0, d16:1/16:0)*"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "2-methylserine",
+          "3-phosphoglycerate",
+          "bilirubin",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "indolepropionate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "21-hydroxypregnenolone disulfate",
+          "3-phosphoglycerate",
+          "X - 23639",
+          "X - 24307",
+          "eicosapentaenoate (EPA; 20:5n3)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "21-hydroxypregnenolone disulfate",
+          "3-phosphoglycerate",
+          "cys-gly, oxidized",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 02269",
+          "X - 14056",
+          "X - 24307",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 02269",
+          "bilirubin",
+          "cys-gly, oxidized",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 12462",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate",
+          "sphingosine 1-phosphate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 24307",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "tiglyl carnitine (C5)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 24307",
+          "inosine 5'-monophosphate (IMP)",
+          "maleate",
+          "sphingosine 1-phosphate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 24307",
+          "inosine 5'-monophosphate (IMP)",
+          "picolinate",
+          "tiglyl carnitine (C5)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "caproate (6:0)",
+          "gamma-glutamylhistidine",
+          "iminodiacetate (IDA)",
+          "sphingomyelin (d18:1/14:0, d16:1/16:0)*"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_round2",
+    "variant": "lda_contribution",
+    "k": 5,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.8958333333333333,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Multivariate LDA contribution: standardization followed by lsqr LDA with automatic shrinkage. Relevance is the absolute coefficient times the standardized class-mean difference.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "3-phosphoglycerate": 20,
+      "X - 11334": 13,
+      "caproate (6:0)": 3,
+      "creatine": 15,
+      "inosine 5'-monophosphate (IMP)": 20,
+      "iminodiacetate (IDA)": 5,
+      "methylsuccinate": 2,
+      "21-hydroxypregnenolone disulfate": 1,
+      "caprylate (8:0)": 9,
+      "indolepropionate": 3,
+      "1-methylimidazoleacetate": 5,
+      "allantoin": 1,
+      "sarcosine": 1,
+      "1-stearoyl-GPI (18:0)": 1,
+      "glutamate": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caproate (6:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 3
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caprylate (8:0)",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 3
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caprylate (8:0)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPI (18:0)",
+          "3-phosphoglycerate",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "21-hydroxypregnenolone disulfate",
+          "3-phosphoglycerate",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "glutamate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "allantoin",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_round2",
+    "variant": "lda_contribution",
+    "k": 7,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.9125000000000001,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Multivariate LDA contribution: standardization followed by lsqr LDA with automatic shrinkage. Relevance is the absolute coefficient times the standardized class-mean difference.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "3-phosphoglycerate": 15,
+      "9,10-DiHOME": 4,
+      "X - 11334": 11,
+      "bilirubin": 3,
+      "caproate (6:0)": 4,
+      "creatine": 9,
+      "picolinate": 2,
+      "1-stearoyl-GPS (18:0)*": 3,
+      "10-undecenoate (11:1n1)": 2,
+      "inosine 5'-monophosphate (IMP)": 14,
+      "isoleucylglycine": 2,
+      "1-palmitoyl-GPI* (16:0)*": 1,
+      "X - 14056": 1,
+      "caprylate (8:0)": 5,
+      "glutamate": 2,
+      "sphingomyelin (d18:1/14:0, d16:1/16:0)*": 2,
+      "12,13-DiHOME": 3,
+      "iminodiacetate (IDA)": 4,
+      "methylsuccinate": 5,
+      "prolylhydroxyproline": 1,
+      "X - 02269": 3,
+      "X - 21258": 4,
+      "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*": 2,
+      "1-methylimidazoleacetate": 4,
+      "indolepropionate": 2,
+      "2-methylserine": 1,
+      "X - 12462": 2,
+      "maleate": 1,
+      "X - 17337": 2,
+      "biliverdin": 1,
+      "sarcosine": 1,
+      "gamma-glutamylhistidine": 1,
+      "citrate": 1,
+      "eicosapentaenoate (EPA; 20:5n3)": 3,
+      "1-stearoyl-GPI (18:0)": 3,
+      "X - 11530": 4,
+      "X - 24306": 1,
+      "choline": 5,
+      "1-arachidonoyl-GPI* (20:4)*": 1,
+      "X - 11522": 1,
+      "glycerophosphoethanolamine": 1,
+      "1-(1-enyl-oleoyl)-GPE (P-18:1)*": 1,
+      "X - 23639": 1,
+      "2-hydroxystearate": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "1-(1-enyl-oleoyl)-GPE (P-18:1)*",
+          "1-methylimidazoleacetate",
+          "1-stearoyl-GPI (18:0)",
+          "9,10-DiHOME",
+          "creatine",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-arachidonoyl-GPI* (20:4)*",
+          "1-methylimidazoleacetate",
+          "1-stearoyl-GPS (18:0)*",
+          "12,13-DiHOME",
+          "3-phosphoglycerate",
+          "X - 02269",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+          "1-methylimidazoleacetate",
+          "12,13-DiHOME",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caproate (6:0)",
+          "indolepropionate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*",
+          "9,10-DiHOME",
+          "X - 17337",
+          "biliverdin",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "2-methylserine",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 12462",
+          "inosine 5'-monophosphate (IMP)",
+          "maleate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "3-phosphoglycerate",
+          "X - 14056",
+          "caprylate (8:0)",
+          "glutamate",
+          "inosine 5'-monophosphate (IMP)",
+          "sphingomyelin (d18:1/14:0, d16:1/16:0)*"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPI (18:0)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 11530",
+          "X - 17337",
+          "inosine 5'-monophosphate (IMP)",
+          "picolinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPI (18:0)",
+          "X - 11334",
+          "X - 11522",
+          "choline",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPS (18:0)*",
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "isoleucylglycine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-stearoyl-GPS (18:0)*",
+          "3-phosphoglycerate",
+          "X - 12462",
+          "citrate",
+          "creatine",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 02269",
+          "X - 11334",
+          "X - 21258",
+          "creatine",
+          "sphingomyelin (d18:1/14:0, d16:1/16:0)*"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "12,13-DiHOME",
+          "3-phosphoglycerate",
+          "caprylate (8:0)",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate",
+          "prolylhydroxyproline"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "2-hydroxystearate",
+          "X - 11530",
+          "caproate (6:0)",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "isoleucylglycine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "9,10-DiHOME",
+          "X - 11334",
+          "bilirubin",
+          "caproate (6:0)",
+          "creatine",
+          "picolinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "9,10-DiHOME",
+          "X - 11334",
+          "caprylate (8:0)",
+          "creatine",
+          "eicosapentaenoate (EPA; 20:5n3)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 02269",
+          "X - 21258",
+          "bilirubin",
+          "choline",
+          "creatine",
+          "iminodiacetate (IDA)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 21258",
+          "gamma-glutamylhistidine",
+          "glutamate",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 23639",
+          "bilirubin",
+          "choline",
+          "iminodiacetate (IDA)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11530",
+          "caproate (6:0)",
+          "caprylate (8:0)",
+          "choline",
+          "glycerophosphoethanolamine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "X - 11334",
+          "X - 11530",
+          "X - 21258",
+          "X - 24306",
+          "choline",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "plasma",
+    "campaign": "plasma_gas_round2",
+    "variant": "lda_contribution",
+    "k": 7,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.9089583333333333,
+    "configurations_compared": 7,
+    "technique": {
+      "relevance": "Multivariate LDA contribution: standardization followed by lsqr LDA with automatic shrinkage. Relevance is the absolute coefficient times the standardized class-mean difference.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "3-phosphoglycerate": 20,
+      "X - 02269": 3,
+      "X - 11334": 16,
+      "caproate (6:0)": 3,
+      "caprylate (8:0)": 9,
+      "creatine": 19,
+      "inosine 5'-monophosphate (IMP)": 20,
+      "allantoin": 5,
+      "glutamate": 1,
+      "iminodiacetate (IDA)": 5,
+      "1-methylimidazoleacetate": 5,
+      "10-undecenoate (11:1n1)": 7,
+      "biliverdin": 4,
+      "1-palmitoyl-GPI* (16:0)*": 1,
+      "sphingomyelin (d18:1/14:0, d16:1/16:0)*": 1,
+      "bilirubin": 2,
+      "methylsuccinate": 5,
+      "X - 21258": 3,
+      "indolepropionate": 5,
+      "21-hydroxypregnenolone disulfate": 2,
+      "sarcosine": 3,
+      "X - 11522": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "biliverdin",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 02269",
+          "X - 11334",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 21258",
+          "allantoin",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "biliverdin",
+          "creatine",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-methylimidazoleacetate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "1-palmitoyl-GPI* (16:0)*",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)",
+          "sphingomyelin (d18:1/14:0, d16:1/16:0)*"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 02269",
+          "allantoin",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "bilirubin",
+          "caprylate (8:0)",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caproate (6:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caprylate (8:0)",
+          "creatine",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "10-undecenoate (11:1n1)",
+          "3-phosphoglycerate",
+          "biliverdin",
+          "caprylate (8:0)",
+          "creatine",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "21-hydroxypregnenolone disulfate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caprylate (8:0)",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "21-hydroxypregnenolone disulfate",
+          "3-phosphoglycerate",
+          "X - 11334",
+          "creatine",
+          "indolepropionate",
+          "inosine 5'-monophosphate (IMP)",
+          "sarcosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 02269",
+          "X - 11334",
+          "caproate (6:0)",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 21258",
+          "allantoin",
+          "bilirubin",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "X - 21258",
+          "biliverdin",
+          "creatine",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "allantoin",
+          "creatine",
+          "glutamate",
+          "iminodiacetate (IDA)",
+          "inosine 5'-monophosphate (IMP)"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11334",
+          "caproate (6:0)",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "3-phosphoglycerate",
+          "X - 11522",
+          "allantoin",
+          "caprylate (8:0)",
+          "creatine",
+          "inosine 5'-monophosphate (IMP)",
+          "methylsuccinate"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_objectives",
+    "variant": "spearman_mean",
+    "k": 3,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.9067592739378567,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Absolute Spearman correlation with the class label, using average ranks.",
+      "redundancy": "Redundancy: absolute pairwise Spearman correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "8-OHG": 14,
+      "tGSH/GSSG": 8,
+      "% oxidized": 10,
+      "fGSH/GSSG": 9,
+      "Nitrotyrosine": 9,
+      "Methion.": 1,
+      "% DNA methylation": 1,
+      "Chlorotyrosine": 3,
+      "tGSH": 2,
+      "fGSH": 1,
+      "fCystine/fCysteine": 2
+    },
+    "panels": [
+      {
+        "names": [
+          "8-OHG",
+          "Nitrotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 3
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "fGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "8-OHG",
+          "Nitrotyrosine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Nitrotyrosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "fCystine/fCysteine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Chlorotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Nitrotyrosine",
+          "fGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Nitrotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "Methion.",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "fGSH/GSSG",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "fGSH/GSSG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chlorotyrosine",
+          "Nitrotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chlorotyrosine",
+          "fCystine/fCysteine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_objectives",
+    "variant": "fisher_mean",
+    "k": 3,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.9178027901077996,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Univariate Fisher relevance: squared class-mean difference divided by the sum of class variances.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "8-OHG": 20,
+      "tGSH/GSSG": 20,
+      "% oxidized": 20
+    },
+    "panels": [
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 20
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_objectives",
+    "variant": "spearman_mean",
+    "k": 5,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.9267616518706405,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Absolute Spearman correlation with the class label, using average ranks.",
+      "redundancy": "Redundancy: absolute pairwise Spearman correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Methion.": 11,
+      "% DNA methylation": 3,
+      "fGSH/GSSG": 13,
+      "Nitrotyrosine": 10,
+      "% oxidized": 13,
+      "8-OHG": 11,
+      "tGSH": 3,
+      "tGSH/GSSG": 8,
+      "Chlorotyrosine": 6,
+      "SAM/SAH": 5,
+      "Cysteine": 3,
+      "GSSG": 3,
+      "fCystine/fCysteine": 6,
+      "fGSH": 3,
+      "fCystine": 1,
+      "SAM": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "Chlorotyrosine",
+          "fCystine/fCysteine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "Methion.",
+          "Nitrotyrosine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "Nitrotyrosine",
+          "SAM/SAH",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "fGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Cysteine",
+          "Methion.",
+          "Nitrotyrosine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Cysteine",
+          "Nitrotyrosine",
+          "SAM/SAH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Methion.",
+          "Nitrotyrosine",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Methion.",
+          "fCystine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Methion.",
+          "Nitrotyrosine",
+          "fGSH/GSSG",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Methion.",
+          "Nitrotyrosine",
+          "fGSH/GSSG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Methion.",
+          "SAM",
+          "fGSH/GSSG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "Methion.",
+          "fCystine/fCysteine",
+          "fGSH",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "Nitrotyrosine",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "GSSG",
+          "fCystine/fCysteine",
+          "fGSH",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "GSSG",
+          "fCystine/fCysteine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "Methion.",
+          "Nitrotyrosine",
+          "SAM/SAH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "8-OHG",
+          "SAM/SAH",
+          "fCystine/fCysteine",
+          "fGSH/GSSG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chlorotyrosine",
+          "Cysteine",
+          "Nitrotyrosine",
+          "SAM/SAH",
+          "fGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chlorotyrosine",
+          "GSSG",
+          "fCystine/fCysteine",
+          "fGSH/GSSG",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_round2",
+    "variant": "lda_contribution",
+    "k": 5,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.93828273620799,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Multivariate LDA contribution: standardization followed by lsqr LDA with automatic shrinkage. Relevance is the absolute coefficient times the standardized class-mean difference.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "% DNA methylation": 20,
+      "8-OHG": 20,
+      "Cysteine": 19,
+      "Chlorotyrosine": 20,
+      "% oxidized": 20,
+      "tGSH/GSSG": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine"
+        ],
+        "seeds": 19
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_round2",
+    "variant": "lda_contribution",
+    "k": 7,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.9385918674698798,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Multivariate LDA contribution: standardization followed by lsqr LDA with automatic shrinkage. Relevance is the absolute coefficient times the standardized class-mean difference.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Methion.": 7,
+      "8-OHG": 20,
+      "Adenosine": 2,
+      "tGSH": 5,
+      "GSSG": 6,
+      "Chlorotyrosine": 16,
+      "% oxidized": 18,
+      "SAM": 3,
+      "% DNA methylation": 8,
+      "SAH": 6,
+      "Cysteine": 9,
+      "Tryptophane": 3,
+      "Glu.-Cys.": 6,
+      "fCystine": 8,
+      "SAM/SAH": 2,
+      "tGSH/GSSG": 5,
+      "fCysteine": 2,
+      "Cys.-Gly.": 2,
+      "fGSH": 4,
+      "Nitrotyrosine": 2,
+      "fCystine/fCysteine": 5,
+      "Homocysteine": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Adenosine",
+          "fCystine",
+          "fGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "SAH",
+          "Tryptophane"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "GSSG",
+          "SAM",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Cys.-Gly.",
+          "Cysteine",
+          "SAM/SAH",
+          "fCystine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Cys.-Gly.",
+          "Glu.-Cys.",
+          "Methion.",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Cysteine",
+          "fCystine",
+          "fCystine/fCysteine",
+          "fGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "SAM/SAH",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Glu.-Cys.",
+          "SAM",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Adenosine",
+          "Chlorotyrosine",
+          "GSSG",
+          "Methion.",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "GSSG",
+          "Nitrotyrosine",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "GSSG",
+          "fCystine",
+          "fCystine/fCysteine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "Glu.-Cys.",
+          "SAM",
+          "fCystine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "Glu.-Cys.",
+          "fCystine/fCysteine",
+          "fGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "SAH",
+          "fCysteine",
+          "fCystine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "GSSG",
+          "Glu.-Cys.",
+          "Methion.",
+          "fCystine/fCysteine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "GSSG",
+          "Methion.",
+          "Nitrotyrosine",
+          "SAH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Glu.-Cys.",
+          "SAH",
+          "Tryptophane",
+          "fCystine/fCysteine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Homocysteine",
+          "Methion.",
+          "SAH",
+          "tGSH"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "SAH",
+          "Tryptophane",
+          "fCystine"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "fCysteine",
+          "fCystine",
+          "fGSH"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "s1",
+    "campaign": "cohort_gas_round2",
+    "variant": "relief5",
+    "k": 7,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.9455156150919466,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Binary ReliefF: features scaled to [0,1], every sample used as an anchor, 5 nearest same-class neighbors and 5 opposite-class neighbors under L1 distance. Relevance is the mean opposite-class minus same-class feature distance, clipped below at zero.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "% DNA methylation": 11,
+      "8-OHG": 20,
+      "tGSH": 20,
+      "tGSH/GSSG": 20,
+      "Chlorotyrosine": 20,
+      "fCystine": 15,
+      "% oxidized": 19,
+      "SAM": 1,
+      "Cysteine": 1,
+      "Adenosine": 2,
+      "Methion.": 4,
+      "fCystine/fCysteine": 6,
+      "GSSG": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "fCystine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 7
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Adenosine",
+          "Chlorotyrosine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "fCystine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Methion.",
+          "fCystine/fCysteine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "fCystine",
+          "fCystine/fCysteine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "fCystine/fCysteine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% DNA methylation",
+          "8-OHG",
+          "Chlorotyrosine",
+          "fCystine",
+          "fCystine/fCysteine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "Cysteine",
+          "fCystine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "GSSG",
+          "fCystine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "% oxidized",
+          "8-OHG",
+          "Chlorotyrosine",
+          "SAM",
+          "fCystine",
+          "tGSH",
+          "tGSH/GSSG"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_objectives",
+    "variant": "pearson_mean",
+    "k": 3,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.776875,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Absolute Pearson correlation between each biomarker and the class label.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Jeotgalicoccus_saudimassiliensis": 1,
+      "Raoultella_sp._NCTC_9189": 14,
+      "Shewanella_donghaensis": 10,
+      "Actinomyces_viscosus": 5,
+      "Burkholderia_sp._BDU6": 3,
+      "Bacillus_cellulosilyticus": 1,
+      "Rhodovulum_sp._P5": 2,
+      "Yersinia_ruckeri": 4,
+      "Pandoraea_oxalativorans": 1,
+      "Legionella_israelensis": 1,
+      "Pediococcus_inopinatus": 2,
+      "Rhizobium_flavum": 1,
+      "Tetragenococcus_koreensis": 1,
+      "Serpentinomonas_raichei": 1,
+      "Desulfotomaculum_reducens": 2,
+      "Rhodococcus_pyridinivorans": 1,
+      "Methylomonas_koyamae": 1,
+      "Parvularcula_bermudensis": 1,
+      "Octadecabacter_antarcticus": 1,
+      "Deinococcus_radiodurans": 1,
+      "Pseudomonas_sp._URMO17WK12:I11": 2,
+      "Polaribacter_sp._Hel1_33_78": 2,
+      "Chloracidobacterium_thermophilum": 1,
+      "Arthrobacter_sp._PGP41": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Burkholderia_sp._BDU6",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Pseudomonas_sp._URMO17WK12:I11",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Raoultella_sp._NCTC_9189",
+          "Rhizobium_flavum"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_cellulosilyticus",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Pseudomonas_sp._URMO17WK12:I11",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chloracidobacterium_thermophilum",
+          "Raoultella_sp._NCTC_9189",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Deinococcus_radiodurans",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Desulfotomaculum_reducens",
+          "Octadecabacter_antarcticus",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Desulfotomaculum_reducens",
+          "Rhodococcus_pyridinivorans",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Jeotgalicoccus_saudimassiliensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Legionella_israelensis",
+          "Pediococcus_inopinatus",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Methylomonas_koyamae",
+          "Parvularcula_bermudensis",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Pandoraea_oxalativorans",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Pediococcus_inopinatus",
+          "Polaribacter_sp._Hel1_33_78",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Raoultella_sp._NCTC_9189",
+          "Serpentinomonas_raichei",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_round2",
+    "variant": "fisher_weak",
+    "k": 3,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.822361111111111,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Univariate Fisher relevance, with a weak redundancy penalty.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.95,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Burkholderia_sp._BDU6": 12,
+      "Raoultella_sp._NCTC_9189": 20,
+      "Shewanella_donghaensis": 20,
+      "Rhodovulum_sp._P5": 3,
+      "Polaribacter_sp._Hel1_33_78": 3,
+      "Arthrobacter_sp._PGP41": 1,
+      "Legionella_israelensis": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 12
+      },
+      {
+        "names": [
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 3
+      },
+      {
+        "names": [
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 3
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_objectives",
+    "variant": "spearman_mean",
+    "k": 5,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.7652777777777778,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Absolute Spearman correlation with the class label, using average ranks.",
+      "redundancy": "Redundancy: absolute pairwise Spearman correlation.",
+      "alpha": 0.77,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Bacillus_foraminis": 2,
+      "Burkholderia_sp._BDU6": 3,
+      "Mycoplasma_glycophilum": 1,
+      "Raoultella_sp._NCTC_9189": 19,
+      "Shewanella_donghaensis": 12,
+      "Acetobacter_persici": 3,
+      "Bacillus_cellulosilyticus": 3,
+      "Streptomyces_sp._ADI95-16": 3,
+      "Desulfotomaculum_reducens": 1,
+      "Methylomonas_koyamae": 1,
+      "Rhodococcus_pyridinivorans": 3,
+      "Octadecabacter_antarcticus": 4,
+      "Planctomycetes_bacterium_Poly24": 3,
+      "Rhodovulum_sp._P5": 1,
+      "Tetragenococcus_koreensis": 5,
+      "Cronobacter_condimenti": 1,
+      "Legionella_israelensis": 2,
+      "Microbacterium_sp._CBA3102": 2,
+      "Rhodovulum_sulfidophilum": 1,
+      "Jeotgalicoccus_saudimassiliensis": 1,
+      "Terriglobus_saanensis": 1,
+      "Chloracidobacterium_thermophilum": 1,
+      "Polaribacter_sp._Hel1_33_78": 5,
+      "Actinomyces_radicidentis": 2,
+      "Oceanobacillus_kimchii": 2,
+      "Advenella_mimigardefordensis": 1,
+      "Lactobacillus_vaginalis": 1,
+      "Actinomyces_viscosus": 1,
+      "Pseudomonas_sp._C27(2019)": 2,
+      "Selenomonas_sp._oral_taxon_136": 1,
+      "Hyphomonas_neptunium": 2,
+      "Salinispora_tropica": 1,
+      "Rhizobium_flavum": 1,
+      "Yersinia_ruckeri": 1,
+      "Arthrobacter_sp._PGP41": 2,
+      "Pantoea_ananatis": 1,
+      "Arthrobacter_sp._PAMC_25486": 1,
+      "Pediococcus_inopinatus": 1,
+      "Pseudomonas_palleroniana": 1,
+      "Pandoraea_oxalativorans": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Arthrobacter_sp._PAMC_25486",
+          "Pediococcus_inopinatus",
+          "Raoultella_sp._NCTC_9189",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Bacillus_cellulosilyticus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Jeotgalicoccus_saudimassiliensis",
+          "Raoultella_sp._NCTC_9189",
+          "Terriglobus_saanensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Burkholderia_sp._BDU6",
+          "Oceanobacillus_kimchii",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Hyphomonas_neptunium",
+          "Raoultella_sp._NCTC_9189",
+          "Salinispora_tropica",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_viscosus",
+          "Bacillus_cellulosilyticus",
+          "Pseudomonas_sp._C27(2019)",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Advenella_mimigardefordensis",
+          "Bacillus_cellulosilyticus",
+          "Lactobacillus_vaginalis",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Legionella_israelensis",
+          "Planctomycetes_bacterium_Poly24",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Pantoea_ananatis",
+          "Planctomycetes_bacterium_Poly24",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_foraminis",
+          "Burkholderia_sp._BDU6",
+          "Mycoplasma_glycophilum",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_foraminis",
+          "Burkholderia_sp._BDU6",
+          "Octadecabacter_antarcticus",
+          "Raoultella_sp._NCTC_9189",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Chloracidobacterium_thermophilum",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodococcus_pyridinivorans",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Cronobacter_condimenti",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodococcus_pyridinivorans",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Desulfotomaculum_reducens",
+          "Methylomonas_koyamae",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodococcus_pyridinivorans",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Hyphomonas_neptunium",
+          "Raoultella_sp._NCTC_9189",
+          "Rhizobium_flavum",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Legionella_israelensis",
+          "Microbacterium_sp._CBA3102",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Microbacterium_sp._CBA3102",
+          "Octadecabacter_antarcticus",
+          "Raoultella_sp._NCTC_9189",
+          "Selenomonas_sp._oral_taxon_136",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Oceanobacillus_kimchii",
+          "Pandoraea_oxalativorans",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Octadecabacter_antarcticus",
+          "Planctomycetes_bacterium_Poly24",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Octadecabacter_antarcticus",
+          "Pseudomonas_palleroniana",
+          "Pseudomonas_sp._C27(2019)",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_round2",
+    "variant": "fisher_weak",
+    "k": 5,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.8091666666666666,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Univariate Fisher relevance, with a weak redundancy penalty.",
+      "redundancy": "Redundancy: absolute pairwise Pearson correlation.",
+      "alpha": 0.95,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Arthrobacter_sp._PGP41": 6,
+      "Burkholderia_sp._BDU6": 20,
+      "Octadecabacter_antarcticus": 3,
+      "Raoultella_sp._NCTC_9189": 20,
+      "Shewanella_donghaensis": 20,
+      "Legionella_israelensis": 3,
+      "Yersinia_ruckeri": 2,
+      "Tetragenococcus_koreensis": 6,
+      "Cronobacter_condimenti": 2,
+      "Oceanobacillus_kimchii": 2,
+      "Planctomycetes_bacterium_Poly24": 1,
+      "Jeotgalicoccus_saudimassiliensis": 1,
+      "Arthrobacter_sp._PAMC_25486": 3,
+      "Rhodovulum_sp._P5": 1,
+      "Polaribacter_sp._Hel1_33_78": 3,
+      "Desulfotomaculum_reducens": 1,
+      "Deinococcus_radiodurans": 1,
+      "Lactobacillus_vaginalis": 1,
+      "Streptococcus_ferus": 1,
+      "Parvularcula_bermudensis": 1,
+      "Planctomycetes_bacterium_Pan258": 1,
+      "Pediococcus_inopinatus": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Octadecabacter_antarcticus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Cronobacter_condimenti",
+          "Oceanobacillus_kimchii",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 2
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Burkholderia_sp._BDU6",
+          "Planctomycetes_bacterium_Pan258",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Burkholderia_sp._BDU6",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Jeotgalicoccus_saudimassiliensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Planctomycetes_bacterium_Poly24",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Deinococcus_radiodurans",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Desulfotomaculum_reducens",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Lactobacillus_vaginalis",
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Octadecabacter_antarcticus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptococcus_ferus"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Parvularcula_bermudensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Pediococcus_inopinatus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_round2",
+    "variant": "fisher_only",
+    "k": 7,
+    "method": "gas_uniform",
+    "mean_across_classifiers": 0.7594444444444445,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Univariate Fisher relevance, without a redundancy penalty.",
+      "redundancy": "No redundancy: the redundancy matrix is zero.",
+      "alpha": 1.0,
+      "guide": "Uniform preparation: zero logits and equal probability for every feasible panel. No relevance- or redundancy-based guide is used.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Bacillus_cellulosilyticus": 4,
+      "Parvularcula_bermudensis": 2,
+      "Planctomycetes_bacterium_Poly24": 1,
+      "Raoultella_sp._NCTC_9189": 14,
+      "Rhodovulum_sulfidophilum": 4,
+      "Shewanella_donghaensis": 20,
+      "Streptomyces_sp._ADI95-16": 3,
+      "Acetobacter_persici": 5,
+      "Actinomyces_radicidentis": 1,
+      "Arthrobacter_sp._PAMC_25486": 5,
+      "Pantoea_ananatis": 6,
+      "Acidisarcina_polymorpha": 1,
+      "Burkholderia_sp._BDU6": 8,
+      "Cronobacter_condimenti": 5,
+      "Rhizobium_flavum": 4,
+      "Salinispora_tropica": 1,
+      "Microbacterium_sp._CBA3102": 1,
+      "Octadecabacter_antarcticus": 2,
+      "Pseudomonas_sp._C27(2019)": 1,
+      "Deinococcus_radiodurans": 1,
+      "Exiguobacterium_antarcticum": 2,
+      "Lactobacillus_vaginalis": 5,
+      "Mycoplasma_glycophilum": 6,
+      "Yersinia_ruckeri": 1,
+      "Pediococcus_inopinatus": 1,
+      "Tetragenococcus_koreensis": 2,
+      "Advenella_mimigardefordensis": 3,
+      "Desulfotomaculum_reducens": 2,
+      "Polaribacter_sp._Hel1_33_78": 2,
+      "Roseovarius_sp._THAF9": 4,
+      "Clostridium_sp._SY8519": 1,
+      "Methylomonas_koyamae": 2,
+      "Jeotgalicoccus_saudimassiliensis": 1,
+      "Arthrobacter_sp._PGP41": 2,
+      "Chloracidobacterium_thermophilum": 2,
+      "Pseudomonas_palleroniana": 2,
+      "Terriglobus_saanensis": 2,
+      "Hyphomonas_neptunium": 2,
+      "Planctomycetes_bacterium_Pan258": 2,
+      "Rhodovulum_sp._P5": 2,
+      "Caulobacter_vibrioides": 1,
+      "Pseudomonas_sp._URMO17WK12:I11": 1,
+      "Streptococcus_ferus": 1,
+      "Paenibacillus_yonginensis": 1,
+      "Methylorubrum_populi": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Actinomyces_radicidentis",
+          "Arthrobacter_sp._PAMC_25486",
+          "Pantoea_ananatis",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Arthrobacter_sp._PGP41",
+          "Chloracidobacterium_thermophilum",
+          "Mycoplasma_glycophilum",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Burkholderia_sp._BDU6",
+          "Chloracidobacterium_thermophilum",
+          "Exiguobacterium_antarcticum",
+          "Polaribacter_sp._Hel1_33_78",
+          "Rhizobium_flavum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Burkholderia_sp._BDU6",
+          "Microbacterium_sp._CBA3102",
+          "Octadecabacter_antarcticus",
+          "Pseudomonas_sp._C27(2019)",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Burkholderia_sp._BDU6",
+          "Pseudomonas_palleroniana",
+          "Rhizobium_flavum",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis",
+          "Streptococcus_ferus"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acidisarcina_polymorpha",
+          "Burkholderia_sp._BDU6",
+          "Cronobacter_condimenti",
+          "Parvularcula_bermudensis",
+          "Rhizobium_flavum",
+          "Salinispora_tropica",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Advenella_mimigardefordensis",
+          "Arthrobacter_sp._PAMC_25486",
+          "Bacillus_cellulosilyticus",
+          "Pantoea_ananatis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Terriglobus_saanensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Advenella_mimigardefordensis",
+          "Burkholderia_sp._BDU6",
+          "Lactobacillus_vaginalis",
+          "Octadecabacter_antarcticus",
+          "Paenibacillus_yonginensis",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Advenella_mimigardefordensis",
+          "Desulfotomaculum_reducens",
+          "Pantoea_ananatis",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Roseovarius_sp._THAF9",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Bacillus_cellulosilyticus",
+          "Cronobacter_condimenti",
+          "Mycoplasma_glycophilum",
+          "Pantoea_ananatis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Burkholderia_sp._BDU6",
+          "Cronobacter_condimenti",
+          "Desulfotomaculum_reducens",
+          "Jeotgalicoccus_saudimassiliensis",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Lactobacillus_vaginalis",
+          "Pseudomonas_palleroniana",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Terriglobus_saanensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Caulobacter_vibrioides",
+          "Pseudomonas_sp._URMO17WK12:I11",
+          "Raoultella_sp._NCTC_9189",
+          "Rhizobium_flavum",
+          "Roseovarius_sp._THAF9",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_cellulosilyticus",
+          "Burkholderia_sp._BDU6",
+          "Cronobacter_condimenti",
+          "Pantoea_ananatis",
+          "Pediococcus_inopinatus",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_cellulosilyticus",
+          "Parvularcula_bermudensis",
+          "Planctomycetes_bacterium_Poly24",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Hyphomonas_neptunium",
+          "Lactobacillus_vaginalis",
+          "Pantoea_ananatis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Clostridium_sp._SY8519",
+          "Cronobacter_condimenti",
+          "Lactobacillus_vaginalis",
+          "Methylomonas_koyamae",
+          "Mycoplasma_glycophilum",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Deinococcus_radiodurans",
+          "Exiguobacterium_antarcticum",
+          "Lactobacillus_vaginalis",
+          "Mycoplasma_glycophilum",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Hyphomonas_neptunium",
+          "Mycoplasma_glycophilum",
+          "Planctomycetes_bacterium_Pan258",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Roseovarius_sp._THAF9",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Methylomonas_koyamae",
+          "Methylorubrum_populi",
+          "Mycoplasma_glycophilum",
+          "Planctomycetes_bacterium_Pan258",
+          "Raoultella_sp._NCTC_9189",
+          "Roseovarius_sp._THAF9",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      }
+    ]
+  },
+  {
+    "dataset": "shotgun",
+    "campaign": "cohort_gas_round2",
+    "variant": "fisher_only",
+    "k": 7,
+    "method": "gas_guided",
+    "mean_across_classifiers": 0.7717361111111112,
+    "configurations_compared": 8,
+    "technique": {
+      "relevance": "Univariate Fisher relevance, without a redundancy penalty.",
+      "redundancy": "No redundancy: the redundancy matrix is zero.",
+      "alpha": 1.0,
+      "guide": "Product guide conditioned on panel size, with fixed strength 4. Redundancy is divided by its maximum, or set to zero if the maximum is zero. The guide uses the relevance from this same objective. Changing the QUBO trade-off does not change guide strength.",
+      "qubo": "Minimize the quadratic energy at fixed cardinality. Relevance is normalized by its maximum. Equivalently, maximize weighted mean relevance minus weighted mean pair redundancy. Canonical coefficients are quantized at the scale shown below."
+    },
+    "biomarker_counts": {
+      "Arthrobacter_sp._PGP41": 9,
+      "Burkholderia_sp._BDU6": 18,
+      "Raoultella_sp._NCTC_9189": 20,
+      "Rhodovulum_sp._P5": 9,
+      "Salinispora_tropica": 2,
+      "Shewanella_donghaensis": 20,
+      "Yersinia_ruckeri": 3,
+      "Lactobacillus_vaginalis": 4,
+      "Legionella_israelensis": 5,
+      "Streptomyces_sp._ADI95-16": 2,
+      "Tetragenococcus_koreensis": 5,
+      "Acetobacter_persici": 2,
+      "Jeotgalicoccus_saudimassiliensis": 2,
+      "Cronobacter_condimenti": 1,
+      "Pseudomonas_sp._URMO17WK12:I11": 1,
+      "Octadecabacter_antarcticus": 2,
+      "Parvularcula_bermudensis": 1,
+      "Pediococcus_inopinatus": 4,
+      "Planctomycetes_bacterium_Poly24": 4,
+      "Arthrobacter_sp._PAMC_25486": 2,
+      "Oceanobacillus_kimchii": 1,
+      "Bacillus_cellulosilyticus": 4,
+      "Actinomyces_radicidentis": 6,
+      "Roseovarius_sp._THAF9": 1,
+      "Polaribacter_sp._Hel1_33_78": 4,
+      "Rhodovulum_sulfidophilum": 2,
+      "Methylomonas_koyamae": 1,
+      "Caulobacter_vibrioides": 1,
+      "Bacillus_foraminis": 1,
+      "Selenomonas_sp._oral_taxon_136": 2,
+      "Rhodococcus_pyridinivorans": 1
+    },
+    "panels": [
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Actinomyces_radicidentis",
+          "Arthrobacter_sp._PAMC_25486",
+          "Burkholderia_sp._BDU6",
+          "Lactobacillus_vaginalis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Acetobacter_persici",
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Jeotgalicoccus_saudimassiliensis",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Arthrobacter_sp._PGP41",
+          "Bacillus_foraminis",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Selenomonas_sp._oral_taxon_136",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Burkholderia_sp._BDU6",
+          "Caulobacter_vibrioides",
+          "Pediococcus_inopinatus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Burkholderia_sp._BDU6",
+          "Lactobacillus_vaginalis",
+          "Planctomycetes_bacterium_Poly24",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Actinomyces_radicidentis",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Roseovarius_sp._THAF9",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PAMC_25486",
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Oceanobacillus_kimchii",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Bacillus_cellulosilyticus",
+          "Burkholderia_sp._BDU6",
+          "Jeotgalicoccus_saudimassiliensis",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Bacillus_cellulosilyticus",
+          "Burkholderia_sp._BDU6",
+          "Pediococcus_inopinatus",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sulfidophilum",
+          "Salinispora_tropica",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Burkholderia_sp._BDU6",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Salinispora_tropica",
+          "Shewanella_donghaensis",
+          "Yersinia_ruckeri"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Arthrobacter_sp._PGP41",
+          "Planctomycetes_bacterium_Poly24",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodococcus_pyridinivorans",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_cellulosilyticus",
+          "Burkholderia_sp._BDU6",
+          "Legionella_israelensis",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Bacillus_cellulosilyticus",
+          "Legionella_israelensis",
+          "Planctomycetes_bacterium_Poly24",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Rhodovulum_sulfidophilum",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Cronobacter_condimenti",
+          "Lactobacillus_vaginalis",
+          "Pseudomonas_sp._URMO17WK12:I11",
+          "Raoultella_sp._NCTC_9189",
+          "Rhodovulum_sp._P5",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Lactobacillus_vaginalis",
+          "Legionella_israelensis",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis",
+          "Streptomyces_sp._ADI95-16",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Legionella_israelensis",
+          "Methylomonas_koyamae",
+          "Octadecabacter_antarcticus",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Octadecabacter_antarcticus",
+          "Parvularcula_bermudensis",
+          "Pediococcus_inopinatus",
+          "Planctomycetes_bacterium_Poly24",
+          "Raoultella_sp._NCTC_9189",
+          "Shewanella_donghaensis"
+        ],
+        "seeds": 1
+      },
+      {
+        "names": [
+          "Burkholderia_sp._BDU6",
+          "Pediococcus_inopinatus",
+          "Polaribacter_sp._Hel1_33_78",
+          "Raoultella_sp._NCTC_9189",
+          "Selenomonas_sp._oral_taxon_136",
+          "Shewanella_donghaensis",
+          "Tetragenococcus_koreensis"
+        ],
+        "seeds": 1
+      }
+    ]
+  }
+]
