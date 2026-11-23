@@ -12,13 +12,19 @@ Interactive benchmarks for uniform and guided Grover Adaptive Search (GAS):
 
 The report is in English.
 
+[Interactive GAS walkthrough](https://thewill-i-am.github.io/Gas_Report/learn/):
+registers, QUBO, reversible oracle, state preparation, amplification and a toy
+panel-selection simulator. Includes downloadable Markdown notes and offline math rendering.
+
 ## Interpretation
 
 Results are exploratory: feature selection precedes LOOCV and objective selection is retrospective. Published BF-DCQO results use k=5 accuracy and are identified separately from balanced accuracy. These results do not establish clinical validity or quantum advantage.
 
 ## Files and publishing
 
-- `index.html`: entry point to the English report.
+- `index.html`: entry point to the report and interactive walkthrough.
+- `learn/index.html`: self-contained interactive teaching page.
+- `learn/GAS_WORKING_DESCRIPTION.md`: downloadable working description.
 - `report/top1.html`: self-contained English report.
 - `report/top1.json`: selected configurations and aggregate biomarker/panel frequencies.
 - `report/index.html`: original round-2 archive.

@@ -3,10 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=report/top1.html">
   <title>GAS Benchmark Report</title>
+  <style>
+    body{max-width:960px;margin:80px auto;padding:24px;font:18px/1.6 system-ui;color:#16324f;background:#f4f7fb}
+    h1{line-height:1.2}nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:32px}
+    nav a{display:block;padding:28px;background:white;border:1px solid #dce5ed;border-radius:16px;text-decoration:none;color:#16324f}
+    nav a:hover{border-color:#087f8c}strong{display:block;font-size:24px;color:#087f8c}a:focus-visible{outline:3px solid #087f8c}
+  </style>
 </head>
 <body>
-  <p><a href="report/top1.html">Open the English GAS benchmark report</a></p>
+  <h1>Grover Adaptive Search for biomarker selection</h1>
+  <p>Explore the results, or learn how the search works. Both pages are in English.</p>
+  <nav aria-label="Reports and learning resources">
+    <a href="report/top1.html"><strong>Benchmark results →</strong>Plasma, S1 and Shotgun at k=3, 5 and 7. Graphs, selected biomarkers and comparisons.</a>
+    <a href="learn/"><strong>Interactive walkthrough →</strong>Registers, QUBO, oracle and amplification. Choose a panel and explore the search step by step.</a>
+  </nav>
 </body>
 </html>
